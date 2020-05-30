@@ -557,7 +557,7 @@ function validarNombre(nombre) {
 //  Función que verifica que el e-mail ingresado en un campo de texto es una dirección válida.
 function validarEmail(dirEMail) {
 
-    if(dirEMail=== ""){
+    if(dirEMail != ""){
         if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(dirEMail)) {
             return true;
         }
