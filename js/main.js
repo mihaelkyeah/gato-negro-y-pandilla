@@ -131,7 +131,7 @@ function agregarx3() {
     if(validarNombre(nombre.value)) {
         if(validarEmail(email.value)) {
 
-            for(let x = 0; x < 0; x++) {
+            for(let x = 0; x < 3; x++) {
                 agregarPersona();
             }
 
