@@ -235,8 +235,8 @@ function editarPersona(colNombre,colApellido,colEMail,colEditar,colBorrar,btnEdi
     let valoresAnteriores =
         {
             'nombre': colNombre.textContent,
-            'apellido': colNombre.textContent,
-            'email': colNombre.textContent
+            'apellido': colApellido.textContent,
+            'email': colEMail.textContent
         };
 
     //  Crea inputs para reemplazar las celdas.
