@@ -68,7 +68,7 @@ function agregarPersona() {
     //  Verifica que el email sea válido y el nombre no sea nulo; si esto se cumple,
     //  actualiza el servidor y luego la tabla.
     if (validarNombre(campoAgregaPNombre.value)) {
-        if (validarEmail(campoAgregaPEmail)) {
+        if (validarEmail(campoAgregaPEmail.value)) {
 
             // ====== PORCIÓN AJAX ====== //
 
