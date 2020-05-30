@@ -1,0 +1,296 @@
+/***********************************************************************
+=== Configuraciones globales ===
+***********************************************************************/
+
+/*  Color de los links ya visitados */
+
+
+/*  Fuente global del sitio */
+body {
+    background-color: #483430;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #DDDDDD;
+}
+
+/*  Estilo de barra de navegación   */
+nav {
+    position: sticky;
+    top: 0;
+    text-align: center;
+    color: white;
+    background-color: #111111;
+    padding: 15px;
+}
+
+/*  La barra de navegación se vuelve vertical al cambiar el ancho de la pantalla / del navegador    */
+@media only screen and (max-width: 720px) {
+    
+    nav {
+        padding: 2px;
+    }
+
+    nav a {
+        display: block;
+    }
+
+}
+
+/*  Pie de página   */
+footer {
+    background-color: #000C28;
+    text-align: center;
+    padding: 2px;
+    line-height: 150%;
+}
+
+div {
+    padding: 10px;
+}
+
+/***********************************************************************
+=== Clases correspondientes a cada página ===
+***********************************************************************/
+
+.pag1 {
+    padding: 10px;
+    background-image: url("../images/backgrounds/fondopag1.jpg");
+    background-color: #805840;
+    min-height: 300px;
+}
+
+.pag2 {
+    padding: 10px;
+    text-align: center;
+    align-content: center;
+    background-image: url("../images/backgrounds/fondopag2.jpg");
+    background-color: #805840;
+    min-height: 300px;
+}
+
+.pag3 {
+    padding: 10px;
+    text-align: center;
+    align-content: center;
+    background-image: url("../images/backgrounds/fondopag3.jpg");
+    background-color: #805840;
+    min-height: 300px;
+}
+
+/*  Formato de las páginas de producto  */
+.producto {
+    padding: 10px;
+    text-align: center;
+    align-content: center;
+    background-image: url("../images/backgrounds/fondopag3.jpg");
+    background-color: #805840;
+    min-height: 300px;
+}
+
+/*  Párrafo de las páginas de producto  */
+.producto p{
+    font-size: 11px;
+    font-weight: 600;
+}
+
+/*  Listas para las características de cada producto    */
+.lista {
+    list-style-image: url("../images/bullet.png");
+    list-style-position: outside;
+
+    font-size: 12px;
+    font-weight: 600;
+    text-align: left;
+    line-height: 150%;
+
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/***********************************************************************
+=== Clases específicas ===
+***********************************************************************/
+
+/*  Clase para los ítems de la barra de navegación  */
+.item {
+    font-weight: bold;
+    padding: 15px;
+}
+nav .item:hover {
+    background-color: white;
+    text-transform: uppercase;
+}
+
+/*  Clase para el logo */
+.logo {
+    display: block;
+    background-color: #30180C;
+    background-image: linear-gradient(-90deg, #30180C,#A08060,#30180C);
+    margin-left: auto;
+    margin-right: auto;
+    width: 477px;
+    padding: 10px;
+}
+
+/*  El logo sólo adquiere un tamaño proporcional cuando el ancho de la ventana es más chico */
+@media only screen and (max-width: 720px) {
+    
+    .logo {
+        width: 93%;
+        max-width: 477px;
+    }
+
+}
+
+/*  Contenedor para los campos de compra    */
+.divForm {
+    display: inline-block;
+    vertical-align: top;
+    align-content: center;
+    line-height: 150%;
+}
+
+.divForm img, input {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+}
+
+/*  Contenedor para los campos de compra (responsive)   */
+@media only screen and (max-width: 720px) {
+
+    .divForm {
+        display: block;
+    }
+
+}
+
+/*  Botón de comprar */
+
+.botonCompra {
+    border-radius: 8px;
+    background-color: #068;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px;
+}
+
+/*  Clase para el texto introductorio y la sección "acerca de" */
+
+.bloque-texto {
+    border: 6px groove #036;
+    background-color: #012;
+    padding: 12px;
+    font-size: 14px;
+}
+
+/*  Clase para el cuadro invitando a recomendar gente */
+
+.bloque-recomienda {
+    border: 6px groove #068;
+    background-color: #034;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-block: 6px;
+    width: 65%;
+    font-size: 12px;
+}
+
+/*  Clase para links con fondo azul */
+.linkAzul {
+    color: #0060FF;
+}
+
+/***********************************************************************
+=== Formatos de texto ===
+***********************************************************************/
+
+.cursiva {
+    font-style: italic;
+}
+
+.negrita {
+    font-weight: bold;
+}
+
+.subrayada {
+    text-decoration: underline;
+}
+
+/***********************************************************************
+=== Formato de la tabla ===
+***********************************************************************/
+
+table, tr {
+    padding: 3px;
+    border: 2px groove white;
+    border-collapse: collapse;
+    background-color: #676;
+    color: #111;
+    margin-block: 3px;
+}
+
+td, th {
+    border: 1px inset white;
+    padding: 5px;
+}
+
+th {
+    background-color: #006010;
+    color: #DDD;
+    text-align: center;
+    font-size: 12px;
+}
+
+.pag2 td {
+    font-size: 11px;
+    background-color: #CCC;
+    color: #111;
+}
+
+.pag2 .resaltado {
+    background-color: #08F;
+    color: #FFF;
+}
+
+table.centrarTabla {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.botonesTabla {
+    display: block;
+    text-align: center;
+    line-height: 150%;
+}
+
+/***********************************************************************
+=== Tabla para la página "acerca de" ===
+***********************************************************************/
+
+.pag3 table, td, tr { /* <-- Aplica el mismo formato a las filas y las columnas */
+    background-color: #002008;
+    color: #DDD;
+    font-size: 12px;
+}
+
+.pag3 table {
+    text-align: center;
+    width: 50%;
+}
+
+@media only screen and (max-width: 720px) {
+
+    .pag3 table {
+        width: 80%;
+    }
+
+}
+
+/*  Links en blanco para las celdas de la tabla */
+td a {
+    color: white;
+}
