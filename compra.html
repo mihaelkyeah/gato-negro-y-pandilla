@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CORADOR - Instrumentos Musicales | Comprar</title>
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+</head>
+
+<body>
+
+    <!--Logo de la página-->
+
+    <header>
+
+        <img src="images/website-logo.png" alt="Instrumentos Musicales CORADOR" class="logo">
+    
+    </header>
+    
+    <!--Barra de navergación-->
+            
+    <nav>
+        <a class="item" href="index.html">Inicio</a> |
+        <a class="item" href="compra.html">Comprar</a> |
+        <a class="item" href="acercade.html">Acerca de</a>
+    </nav>
+
+    <!--Formulario de selección de producto y verificación de compra-->
+
+    <div class="pag2">
+
+        <h2><span class="subrayada">¿Qué producto desea comprar?</span></h2>
+
+        <!--Lista de productos-->
+
+        <form name="menuProducto">
+            <select name="nombreProducto">
+                <option value="tecla1">Teclado Crassio SAMBANGRULA-68425</option>
+                <option value="tecla2">Teclado Yahaha HOHSIS-9630</option>
+                <option value="guitarra">Guitarra Squaire CTB-460</option>
+                <option value="guitarra">Guitarra Squaire PST-520</option>
+                <option value="bajo">Bajo Masachussets SI-92</option>
+            </select>
+        </form>
+
+        <!--Solicitud de email del comprador-->
+
+        <div class="divForm">
+            <span class="negrita">Ingrese su dirección de email:</span>
+            <input id="campoEMail" type="text" placeholder="ejemplo123@mail.com">
+        </div>
+
+        <!--Solicitud de captcha-->
+        
+        <div class="divForm">
+            <span class="negrita">Complete el siguiente captcha:</span>
+            <input id="campoCaptcha" type="text">
+            <img id="imgCaptcha" src="" alt="Captcha">
+            <button type="button" id="btnCambioCaptcha">Cambiar captcha</button>
+        </div>
+
+        <!--Botón para comprar-->
+        
+        <div>
+            <button type="button" id="confirmaCompra" class="botonCompra">Comprar</button>
+        </div>
+
+        <!------------------------------------------------------------------------------------------------------------>
+
+        <!--Formulario y tabla de recomendación a usuarios-->
+
+        <div class="bloque-recomienda">
+                Abajo encontrará una tabla para agregar una lista de personas a quienes recomendarnos vía e-mail.<br>
+                <span class="cursiva">Si nos recomienda a 5 personas puede obtener un <span class="negrita">20% de descuento en su primera compra.</span></span>
+        </div>
+
+        <div class="divForm">
+            Nombre: <input id="campoAgregaPNombre" type="text" placeholder="Nombre">
+        </div>
+        <div class="divForm">
+            Apellido: <input id="campoAgregaPApellido" type="text" placeholder="Apellido">
+        </div>
+        <div class="divForm">
+            e-mail: <input id="campoAgregaPEmail" type="email" placeholder="ejemplo123@mail.com">
+        </div>
+
+        <div class="botonesTabla">
+            <button type="button" id="btnAgregarP">Agregar persona</button>
+            <button type="button" id="btnAgregarTres">Agregar por tres</button>
+        </div>
+
+        <div class="botonesTabla">
+            <button type="button" id="btnBorrarT">Borrar todas</button>
+        </div>
+
+        <div class="divForm">
+            Buscar persona: <input id="campoBusqueda" type="text" placeholder="Buscar...">
+        </div>
+
+        <div class="botonesTabla">
+            <button type="button" id="buscarPNom">Buscar por nombre</button>
+            <button type="button" id="buscarPApe">Buscar por apellido</button>
+            <button type="button" id="buscarPEml">Buscar por e-mail</button>
+        </div>
+
+        <table class="centrarTabla">
+
+            <thead>
+                <tr>
+                    <!--Encabezado de la tabla-->
+                    <th>Nombre</th>
+                    <th>Apellido (opcional)</th>
+                    <th>e-mail</th>
+
+                </tr>
+            </thead>
+
+            <tbody id="tablaRecomienda">
+                <!--Cuerpo de la tabla donde se van a ir agregando las filas (por medio de JavaScript)-->
+            </tbody>
+
+        </table>
+
+    </div>
+
+    <!--Pie de la página-->
+
+    <footer>
+        <p><span class="negrita">Me Las Arreglo Como Puedo™</span> es una marca registrada de <span class="negrita">Industrias Sombondrolo™ E Hijos S.R.L.</span><br>
+        Copyright © 2019 reservados todos los derechos y los izquierdos</p>
+    </footer>
+    <audio src="sound/utopiaDing.ogg" id="utopiaDing" preload></audio>
+    <audio src="sound/congrats.ogg" id="congrats" preload></audio>
+    <script type="text/javascript" src="js/main.js"></script>
+
+</body>
+
+</html>
