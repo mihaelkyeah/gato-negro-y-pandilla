@@ -68,7 +68,7 @@ function agregarPersona() {
     //  Verifica que el email sea válido y el nombre no sea nulo; si esto se cumple,
     //  actualiza el servidor y luego la tabla.
     if (validarNombre(campoAgregaPNombre.value)) {
-        if (validarEmail(campoAgregaPEmail.value)) {
+        if (validarEmail(campoAgregaPEmail)) {
 
             // ====== PORCIÓN AJAX ====== //
 
@@ -131,7 +131,7 @@ function agregarx3() {
     if(validarNombre(nombre.value)) {
         if(validarEmail(email.value)) {
 
-            for(let x = 0; x < 3; x++) {
+            for(let x = 0; x < 0; x++) {
                 agregarPersona();
             }
 
@@ -235,8 +235,8 @@ function editarPersona(colNombre,colApellido,colEMail,colEditar,colBorrar,btnEdi
     let valoresAnteriores =
         {
             'nombre': colNombre.textContent,
-            'apellido': colApellido.textContent,
-            'email': colEMail.textContent
+            'apellido': colNombre.textContent,
+            'email': colNombre.textContent
         };
 
     //  Crea inputs para reemplazar las celdas.
@@ -557,7 +557,7 @@ function validarNombre(nombre) {
 //  Función que verifica que el e-mail ingresado en un campo de texto es una dirección válida.
 function validarEmail(dirEMail) {
 
-    if(dirEMail!=""){
+    if(dirEMail=== ""){
         if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(dirEMail)) {
             return true;
         }
