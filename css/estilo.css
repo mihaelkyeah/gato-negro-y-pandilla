@@ -3,7 +3,9 @@
 ***********************************************************************/
 
 /*  Color de los links ya visitados */
-
+a:visited {
+    color: #AA55AA;
+}
 
 /*  Fuente global del sitio */
 body {
